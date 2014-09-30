@@ -90,7 +90,7 @@ int main(void)
 	      
 	    }
 
-	  backg = false; //reset the flag
+	  
 	  
 	  
 	}
