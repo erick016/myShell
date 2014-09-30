@@ -14,17 +14,25 @@ int main(void)
 
   pid_t pid;
 
-  printf("osh> ");  
+    bool backg = false; //everytime we read in a command, start by assuming it's not in the background
+    int i = 0;
+
+    //printf("osh> ");
 
   while(should_run)//ADD EXITING
     {
-      int i = 0;
+      i = 0;
 
-      bool backg = false; //everytime we read in a command, start by assuming it's not in the background     
+      backg = false;
 
+      fflush(stdout);
+
+      printf("\nosh> ");
+      
       fgets(blank,MAX_LINE,stdin);
-      //printf("osh> ");
-
+      
+      
+      
       do
 	{
 	  
@@ -79,10 +87,11 @@ int main(void)
 	    {
 	      wait(NULL);
 	      printf("Child Complete \n");
-	      printf("osh> ");
+	      
 	    }
 
 	  backg = false; //reset the flag
+	  
 	  
 	}
     }
