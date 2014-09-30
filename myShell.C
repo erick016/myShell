@@ -81,6 +81,8 @@ int main(void)
 	      printf("Child Complete \n");
 	      printf("osh> ");
 	    }
+
+	  backg = false; //reset the flag
 	  
 	}
     }
