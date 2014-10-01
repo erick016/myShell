@@ -109,7 +109,7 @@ int main(void)
 			//fflush(stdout);
 			//blank[0] = 0; //refresh blank
 		      }
-    
+ 
 		    else //parent process
 		      {
 			if (!backg)    
@@ -128,6 +128,7 @@ int main(void)
 		    }
 	    
 		}
+
 	}
     }
 
